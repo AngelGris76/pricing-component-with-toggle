@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Pricing component with toggle
+
+    link(rel="stylesheet", href="css/normalize.css")
+    link(rel="stylesheet", href="css/styles.css")
+    script(src="js/scripts.js" type="module") 
+
+  body
+    include ../variables
+    include ../layout/header
+    include ../mixins/card
+    main.maincontent
+      #cards(role="status" aria-live="polite" aria-atomic="true" aria-relevant="all")
+        each plan in plans
+          +card(plan)

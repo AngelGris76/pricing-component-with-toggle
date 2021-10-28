@@ -1,0 +1,14 @@
+mixin card(plan)
+  - var cardClass = "card"
+  if plan.name === "Professional"
+    - cardClass = "card card--primary"
+  section(class= `${cardClass}`)
+    h2.card__title= plan.name 
+    p.card__price
+      span.card__price-symbol $
+      = plan.price
+    ul.card-options 
+      li.card-options__item= `${plan.storageSpace} Storage`
+      li.card-options__item= `${plan.usersAllowed} Users Allowed`
+      li.card-options__item= `Send up to ${plan.transferData } GB`
+    a.card__link(href="#" aria-label=`Learn more about our ${plan.name} plan`) Learn More
