@@ -5,17 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing component with toggle</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js" type="module"> </script>
   </head>
-  <body>
-    <h1 class="title">Our Pricing </h1>
-    <label class="annuallyselect" for="pricingcheck">Annually </label>
-    <input class="pricingcheck" id="pricingcheck" type="checkbox" aria-label="Select between annually or monthly price" aria-controls="cards">
-    <label class="monthlyselect" for="pricingcheck">Monthly</label>
+  <body class="body">
+    <header class="header">
+      <h1 class="title">Our Pricing </h1>
+      <label class="annuallyselect" for="pricingcheck">Annually </label>
+      <input class="pricingcheck" id="pricingcheck" type="checkbox" aria-label="Select between annually or monthly price" aria-controls="cards">
+      <label class="monthlyselect" for="pricingcheck">Monthly</label>
+    </header>
     <main class="maincontent">
-      <div id="cards" role="status" aria-live="polite" aria-atomic="true" aria-relevant="all">
+      <div class="card-container" id="cards" role="status" aria-live="polite" aria-atomic="true" aria-relevant="all">
             <section class="card">
               <h2 class="card__title">Basic</h2>
               <p class="card__price"><span class="card__price-symbol">$</span>19.99
@@ -28,13 +33,13 @@
             </section>
             <section class="card card--primary">
               <h2 class="card__title">Professional</h2>
-              <p class="card__price"><span class="card__price-symbol">$</span>24.99
+              <p class="card__price card__price--light"><span class="card__price-symbol">$</span>24.99
               </p>
               <ul class="card-options"> 
                 <li class="card-options__item">1 TB Storage</li>
                 <li class="card-options__item">5 Users Allowed</li>
                 <li class="card-options__item">Send up to 10 GB</li>
-              </ul><a class="card__link" href="#" aria-label="Learn more about our Professional plan">Learn More</a>
+              </ul><a class="card__link card__link--light" href="#" aria-label="Learn more about our Professional plan">Learn More</a>
             </section>
             <section class="card">
               <h2 class="card__title">Master</h2>

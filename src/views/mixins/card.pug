@@ -1,14 +1,18 @@
 mixin card(plan)
   - var cardClass = "card"
+  - var cardLinkClass = "card__link"
+  - var cardPriceClass ="card__price"
   if plan.name === "Professional"
     - cardClass = "card card--primary"
+    - cardLinkClass = "card__link card__link--light"
+    - cardPriceClass= "card__price card__price--light"
   section(class= `${cardClass}`)
     h2.card__title= plan.name 
-    p.card__price
+    p(class=`${cardPriceClass}`)
       span.card__price-symbol $
       = plan.price
     ul.card-options 
       li.card-options__item= `${plan.storageSpace} Storage`
       li.card-options__item= `${plan.usersAllowed} Users Allowed`
       li.card-options__item= `Send up to ${plan.transferData } GB`
-    a.card__link(href="#" aria-label=`Learn more about our ${plan.name} plan`) Learn More
+    a(class=`${cardLinkClass}` href="#" aria-label=`Learn more about our ${plan.name} plan`) Learn More
