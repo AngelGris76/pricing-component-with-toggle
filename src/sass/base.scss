@@ -30,7 +30,7 @@
   background-position: calc(100% + 194px) -34px;
   background-size: auto;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     background-image: url("../assets/images/bg-top.svg"),
       url("../assets/images/bg-bottom.svg");
     background-position: right top, left bottom;

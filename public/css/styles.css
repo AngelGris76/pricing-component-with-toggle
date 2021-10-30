@@ -27,7 +27,7 @@
   background-position: calc(100% + 194px) -34px;
   background-size: auto;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .body {
     background-image: url("../assets/images/bg-top.svg"), url("../assets/images/bg-bottom.svg");
     background-position: right top, left bottom;
@@ -38,7 +38,7 @@
   padding-block: 3.2rem 3.8rem;
   text-align: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .header {
     padding-top: 0;
   }
@@ -49,7 +49,7 @@
   font-size: 2.3rem;
   color: var(--Grayish-Blue);
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .title {
     margin-top: 0;
   }
@@ -70,7 +70,7 @@
   background-image: linear-gradient(to right, var(--Linear-Gradient));
   border-radius: 16px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .pricingcheck:hover {
     opacity: 0.6;
     cursor: pointer;
@@ -98,7 +98,7 @@
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .card-container {
     flex-direction: row;
   }
@@ -113,11 +113,16 @@
   border-radius: 12px;
   color: var(--Grayish-Blue);
 }
+@media screen and (min-width: 1280px) {
+  .card {
+    width: 330px;
+  }
+}
 .card--primary {
   background-image: linear-gradient(to bottom, var(--Linear-Gradient));
   color: white;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .card--primary {
     padding-block: 3.6rem;
   }
@@ -160,7 +165,7 @@
   border-radius: 8px;
   border: 1px solid transparent;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .card__link:hover {
     background-image: none;
     background-color: transparent;
@@ -173,7 +178,7 @@
   background-color: white;
   color: #696fdd;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
   .card__link--light:hover {
     color: white;
     border-color: currentColor;

@@ -3,7 +3,7 @@
 
   text-align: center;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 0;
   }
 }
@@ -15,7 +15,7 @@
 
   color: var(--Grayish-Blue);
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 0;
   }
 }
@@ -38,7 +38,7 @@
   background-image: linear-gradient(to right, var(--Linear-Gradient));
   border-radius: 16px;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     &:hover {
       opacity: 0.6;
       cursor: pointer;
