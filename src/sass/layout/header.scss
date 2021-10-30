@@ -1,0 +1,48 @@
+.header {
+  padding-block: 3.2rem 3.8rem;
+
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1.15em;
+
+  font-size: 2.3rem;
+
+  color: var(--Grayish-Blue);
+}
+
+.annuallyselect,
+.monthlyselect {
+  color: var(--Light-Grayish-Blue);
+}
+
+.pricingcheck {
+  position: relative;
+  appearance: none;
+
+  width: 56px;
+  height: 32px;
+  margin-inline: 26px;
+
+  vertical-align: middle;
+
+  background-image: linear-gradient(to right, var(--Linear-Gradient));
+  border-radius: 16px;
+}
+
+.pricingcheck::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  aspect-ratio: 1 / 1;
+  top: 4px;
+  right: 4px;
+
+  background-color: white;
+  border-radius: 50%;
+}
+
+.pricingcheck:checked::after {
+  left: 4px;
+}

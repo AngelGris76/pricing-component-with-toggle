@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --Linear-Gradient: hsl(236, 72%, 79%), hsl(237, 63%, 64%);
+  --Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+  --Light-Grayish-Blue: hsl(234, 14%, 74%);
+  --Grayish-Blue: hsl(233, 13%, 49%);
+  --Dark-Grayish-Blue: hsl(232, 13%, 33%);
+  font-size: 94%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: var(--Very-Light-Grayish-Blue);
+  background-image: url("../assets/images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: 194px -34px;
+  background-size: contain;
+}
+
+.header {
+  padding-block: 3.2rem 3.8rem;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 1.15em;
+  font-size: 2.3rem;
+  color: var(--Grayish-Blue);
+}
+
+.annuallyselect,
+.monthlyselect {
+  color: var(--Light-Grayish-Blue);
+}
+
+.pricingcheck {
+  position: relative;
+  appearance: none;
+  width: 56px;
+  height: 32px;
+  margin-inline: 26px;
+  vertical-align: middle;
+  background-image: linear-gradient(to right, var(--Linear-Gradient));
+  border-radius: 16px;
+}
+
+.pricingcheck::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  aspect-ratio: 1/1;
+  top: 4px;
+  right: 4px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.pricingcheck:checked::after {
+  left: 4px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 326px;
+  margin-block: 1rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 12px;
+  color: var(--Grayish-Blue);
+}
+.card--primary {
+  background-image: linear-gradient(to bottom, var(--Linear-Gradient));
+  color: white;
+}
+.card__title {
+  margin-block: 0.2em 1.4em;
+  font-size: 1.2rem;
+}
+.card__price {
+  margin-block: 0 1.7rem;
+  font-size: 4.7rem;
+  color: var(--Dark-Grayish-Blue);
+}
+.card__price--light {
+  color: white;
+}
+.card__price-symbol {
+  font-size: 2.5rem;
+  vertical-align: middle;
+}
+.card-options {
+  margin: 0 0 2.15em 0;
+  padding-left: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--Light-Grayish-Blue);
+}
+.card-options__item {
+  padding-block: 1.15em;
+  border-top: 1px solid var(--Light-Grayish-Blue);
+}
+.card__link {
+  display: block;
+  width: 100%;
+  padding-block: 1.3em;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-image: linear-gradient(to right, var(--Linear-Gradient));
+  color: white;
+  border-radius: 8px;
+}
+.card__link--light {
+  background-image: none;
+  background-color: white;
+  color: #696fdd;
+}
