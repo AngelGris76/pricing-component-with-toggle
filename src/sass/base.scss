@@ -27,6 +27,12 @@
   background-color: var(--Very-Light-Grayish-Blue);
   background-image: url("../assets/images/bg-top.svg");
   background-repeat: no-repeat;
-  background-position: 194px -34px;
-  background-size: contain;
+  background-position: calc(100% + 194px) -34px;
+  background-size: auto;
+
+  @media screen and (min-width: 1024px) {
+    background-image: url("../assets/images/bg-top.svg"),
+      url("../assets/images/bg-bottom.svg");
+    background-position: right top, left bottom;
+  }
 }

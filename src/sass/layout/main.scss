@@ -3,6 +3,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
 }
 
 .card {
@@ -19,6 +23,10 @@
   &--primary {
     background-image: linear-gradient(to bottom, var(--Linear-Gradient));
     color: white;
+
+    @media screen and (min-width: 1024px) {
+      padding-block: 3.6rem;
+    }
   }
 
   &__title {
@@ -70,11 +78,28 @@
     background-image: linear-gradient(to right, var(--Linear-Gradient));
     color: white;
     border-radius: 8px;
+    border: 1px solid transparent;
+
+    @media screen and (min-width: 1024px) {
+      &:hover {
+        background-image: none;
+        background-color: transparent;
+        border-color: var(--Dark-Grayish-Blue);
+        color: hsl(237, 63%, 64%);
+      }
+    }
 
     &--light {
       background-image: none;
       background-color: white;
       color: hsl(237, 63%, 64%);
+
+      @media screen and (min-width: 1024px) {
+        &:hover {
+          color: white;
+          border-color: currentColor;
+        }
+      }
     }
   }
 }

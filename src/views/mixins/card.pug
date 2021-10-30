@@ -9,7 +9,7 @@ mixin card(plan)
   section(class= `${cardClass}`)
     h2.card__title= plan.name 
     p(class=`${cardPriceClass}`)
-      span.card__price-symbol $
+      span.card__price-symbol $ 
       = plan.price
     ul.card-options 
       li.card-options__item= `${plan.storageSpace} Storage`

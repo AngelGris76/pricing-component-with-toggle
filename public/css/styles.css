@@ -24,19 +24,35 @@
   background-color: var(--Very-Light-Grayish-Blue);
   background-image: url("../assets/images/bg-top.svg");
   background-repeat: no-repeat;
-  background-position: 194px -34px;
-  background-size: contain;
+  background-position: calc(100% + 194px) -34px;
+  background-size: auto;
+}
+@media screen and (min-width: 1024px) {
+  .body {
+    background-image: url("../assets/images/bg-top.svg"), url("../assets/images/bg-bottom.svg");
+    background-position: right top, left bottom;
+  }
 }
 
 .header {
   padding-block: 3.2rem 3.8rem;
   text-align: center;
 }
+@media screen and (min-width: 1024px) {
+  .header {
+    padding-top: 0;
+  }
+}
 
 .title {
   margin-bottom: 1.15em;
   font-size: 2.3rem;
   color: var(--Grayish-Blue);
+}
+@media screen and (min-width: 1024px) {
+  .title {
+    margin-top: 0;
+  }
 }
 
 .annuallyselect,
@@ -53,6 +69,12 @@
   vertical-align: middle;
   background-image: linear-gradient(to right, var(--Linear-Gradient));
   border-radius: 16px;
+}
+@media screen and (min-width: 1024px) {
+  .pricingcheck:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }
 }
 
 .pricingcheck::after {
@@ -76,6 +98,11 @@
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 1024px) {
+  .card-container {
+    flex-direction: row;
+  }
+}
 
 .card {
   width: 326px;
@@ -89,6 +116,11 @@
 .card--primary {
   background-image: linear-gradient(to bottom, var(--Linear-Gradient));
   color: white;
+}
+@media screen and (min-width: 1024px) {
+  .card--primary {
+    padding-block: 3.6rem;
+  }
 }
 .card__title {
   margin-block: 0.2em 1.4em;
@@ -126,9 +158,24 @@
   background-image: linear-gradient(to right, var(--Linear-Gradient));
   color: white;
   border-radius: 8px;
+  border: 1px solid transparent;
+}
+@media screen and (min-width: 1024px) {
+  .card__link:hover {
+    background-image: none;
+    background-color: transparent;
+    border-color: var(--Dark-Grayish-Blue);
+    color: #696fdd;
+  }
 }
 .card__link--light {
   background-image: none;
   background-color: white;
   color: #696fdd;
+}
+@media screen and (min-width: 1024px) {
+  .card__link--light:hover {
+    color: white;
+    border-color: currentColor;
+  }
 }
