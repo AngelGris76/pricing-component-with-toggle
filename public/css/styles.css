@@ -40,7 +40,7 @@
 }
 @media screen and (min-width: 1280px) {
   .header {
-    padding-top: 0;
+    padding-block: 4.3rem 3.1rem;
   }
 }
 
@@ -97,6 +97,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100vw;
 }
 @media screen and (min-width: 1280px) {
   .card-container {
@@ -105,18 +106,15 @@
 }
 
 .card {
-  width: 326px;
   margin-block: 1rem;
   padding: 2rem;
+  width: 87%;
+  min-width: 278px;
+  max-width: 348px;
   text-align: center;
   background-color: white;
   border-radius: 12px;
   color: var(--Grayish-Blue);
-}
-@media screen and (min-width: 1280px) {
-  .card {
-    width: 330px;
-  }
 }
 .card--primary {
   background-image: linear-gradient(to bottom, var(--Linear-Gradient));
@@ -133,7 +131,7 @@
 }
 .card__price {
   margin-block: 0 1.7rem;
-  font-size: 4.7rem;
+  font-size: min(18.8vw, 4.7rem);
   color: var(--Dark-Grayish-Blue);
 }
 .card__price--light {
